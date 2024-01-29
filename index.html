@@ -4,7 +4,7 @@
 <head>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
     <style>
-        e-entity{
+        e-entity {
             background-repeat: repeat;
         }
     </style>
@@ -27,53 +27,6 @@
     //     }
     // })
 
-    // AFRAME.registerComponent('music-2-handler', {
-    //     init: function () {
-    //         let playing = false;
-    //         let audio = document.querySelector("#music2");
-    //         this.el.addEventListener('click', () => {
-    //             if (!playing) {
-    //                 audio.play();
-    //             } else {
-    //                 audio.pause();
-    //                 audio.currentTime = 0;
-    //             }
-    //             playing = !playing;
-    //         });
-    //     }
-    // })
-
-    // AFRAME.registerComponent('music-3-handler', {
-    //     init: function () {
-    //         let playing = false;
-    //         let audio = document.querySelector("#music3");
-    //         this.el.addEventListener('click', () => {
-    //             if (!playing) {
-    //                 audio.play();
-    //             } else {
-    //                 audio.pause();
-    //                 audio.currentTime = 0;
-    //             }
-    //             playing = !playing;
-    //         });
-    //     }
-    // })
-
-    // AFRAME.registerComponent('music-4-handler', {
-    //     init: function () {
-    //         let playing = false;
-    //         let audio = document.querySelector("#music4");
-    //         this.el.addEventListener('click', () => {
-    //             if (!playing) {
-    //                 audio.play();
-    //             } else {
-    //                 audio.pause();
-    //                 audio.currentTime = 0;
-    //             }
-    //             playing = !playing;
-    //         });
-    //     }
-    // })
 </script>
 
 <body>
@@ -90,9 +43,6 @@
             <img id="ceiling" src="assets/images/ceiling.jpg"></img>
             <!-- Audios -->
             <audio id="music1" src="assets/audios/music1.mp3" preload="auto"></audio>
-            <audio id="music2" src="assets/audios/music2.mp3" preload="auto"></audio>
-            <audio id="music3" src="assets/audios/music3.mp3" preload="auto"></audio>
-            <audio id="music4" src="assets/audios/music4.mp3" preload="auto"></audio>
             <!-- Models -->
             <a-asset-item id="sculpture-1-obj" src="assets/models/sculpture1.obj"></a-asset-item>
         </a-assets>
@@ -161,8 +111,8 @@
             material="src: url(./assets/wall-image/img11.jpg)" music-4-handler position="12 2 4.9"></a-entity>
 
 
-            <!-- model -->
-            <a-obj-model src="#sculpture-1-obj" position="4 0 0" scale="0.01 0.01 0.01" rotation="0 0 0"
+        <!-- model -->
+        <a-obj-model src="#sculpture-1-obj" position="4 0 0" scale="0.01 0.01 0.01" rotation="0 0 0"
             animation="property: rotation;; to: 0 360 0; dur: 5000; loop: true;"></a-obj-model>
     </a-scene>
 
